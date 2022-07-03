@@ -1,0 +1,421 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#root{
+    padding: 0;
+}
+
+/* ------- Quick Contact -------  */
+
+.quickContainer{
+    background-color: tomato;
+    height: 30px;
+}
+
+.quickAction{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.quickContact, .quickSocial{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quickContact a{
+    text-decoration: none;
+    color: white;
+    line-height: 0; 
+    font-size: 0.9rem;
+    padding: 0px 10px ; 
+    border-width: 0 1px;
+    border-color: rgb(246, 47, 13);
+    border-style: solid; 
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quickContact a:hover{
+    background-color: rgb(250, 142, 123);
+}
+
+.mail{
+    border-left: 0!Important;
+}
+.fa-solid{
+    margin-right: 5px;
+    font-weight: 600;
+}
+.quickSocial a{
+    text-decoration: none;
+    color: black;
+}
+.quickSocial i{
+    font-size: 20px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.quickSocial i:hover{
+    color: rgb(75, 74, 74);
+}
+
+@media (max-width: 992px) { 
+    .quickContainer{
+        display: none;
+    }
+ }
+
+
+
+/* ------- Nav Bar -------  */
+
+
+.collapse{
+    justify-content: flex-end;
+}
+
+.navbar-brand img{
+    width: 150px;
+}
+.navbar-nav, .dropdown-menu{
+    text-align: center;
+}
+.navbar-nav a{
+    font-weight: bold;
+    font-family: 'Nunito', sans-serif;
+}
+
+
+.loginBtn{
+    background-color: tomato;
+    color: white!Important;
+    padding: 0.5rem 1.5rem!Important;
+    border-radius: 5px;
+}
+.nav-link{
+    margin: 0 10px;
+}
+
+.loginBtn:hover{
+    background-color: rgb(250, 142, 123);
+}
+.dropdown-item{
+    color: rgba(0,0,0,.55)!Important ;
+}
+.dropdown-item:hover{
+    color: #1e2125;
+}
+
+
+@media (max-width: 768px) { 
+    .navbar-brand img{
+        width: 80px;
+    }
+    
+ }
+
+ @media (max-width: 992px) { 
+    .loginBtn{
+        width: 200px;
+        margin: auto;
+    }
+    .dropdown-menu{
+        margin: 10px 0;
+    }
+ }
+
+
+ /* ----Carausal-------- */
+
+ .banner{
+    height: 500px;
+}
+.carousel-inner, .carousel-item{
+    height: 100%;
+}
+
+
+#item1{
+    background: url('1.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#item2{
+    background: url('2.jpg');
+}
+#item3{
+    background: url('3.jpg');
+}
+
+.carouseData{
+    height: 100%;
+    width: 100%;
+    display: block;
+    background-position: center!Important;
+    background-size:cover!Important;
+    background-repeat: no-repeat!Important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.brandname{
+    width: 80%;
+    color: white;
+    margin: auto;
+    padding: 30px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.371);
+    -webkit-box-shadow: 3px 10px 66px -14px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 10px 66px -14px rgba(0,0,0,0.75);
+    box-shadow: 3px 10px 66px -32px rgba(0,0,0,0.75);
+}
+
+
+@media (max-width: 768px) { 
+    .brandname{
+        width: 95%;
+    }
+    
+    .slogan1{
+        font-size: 20px;
+    }
+    .instName{
+        font-size: 25px;
+    }
+    .instAddr{
+        font-size: 15px;
+    }
+    
+ }
+
+
+
+ /* -------------facility-------------- */
+ .facility{
+    /* border: 1px solid black; */
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+ }
+
+ .facility h3{
+    font-size: 35px;
+ } 
+
+ .boxes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+ }
+
+ .box{
+    /* border: 1px solid black; */
+    width: 230px;
+    height: 180px;
+    margin: 25px;
+    background-color: #273c75;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+ }
+ .box i{
+    font-size: 50px;
+    color: white;
+ }
+ .box p{
+    font-size: 20px;
+    line-height: 2;
+    color: white;
+    padding: 0;
+    margin: 0;
+ }
+
+
+ /* -----------Our Staff----------- */
+
+
+ .ourStaff,
+ .joinUs{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+ }
+ .staffHead h3{
+    margin: 20px 0 30px 0;
+    font-size: 35px;
+    text-align: center;
+ }
+ .staffData {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+ }
+ .staffCard{
+    margin: 20px;
+ }
+ 
+
+ /* -----------Join Us------------- */
+ .joinUsContent{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+ }
+ .joinText,.joinForm{
+    width: 50%;
+ }
+ .joinText p{
+    text-align: justify;
+ }
+ .joinForm h2{
+    text-align: center;
+ }
+
+ .joinForm form input::-webkit-outer-spin-button,
+.joinForm form input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+@media (max-width: 768px) { 
+    .joinUsContent{
+        flex-wrap: wrap;
+    }
+    .joinText,.joinForm{
+        width: 100%;
+    }
+ }
+
+ /* ------------footer-------------- */
+
+ .footer{
+    background-color: #1e2125; 
+    padding: 80px; 
+    display: flex;
+    color: white;
+    flex-direction: column;
+ }
+
+
+ .contactLinks{
+    display: flex;
+    border-bottom: 1px solid wheat;
+    width: 100%;
+    padding-bottom: 30px;
+    flex-wrap: wrap;
+ }
+
+ 
+ .contactAddress,.quickLink{
+    width: 300px;
+    /* border: 2px solid white; */
+    height: 100%;
+ }
+
+
+ .contactAddress{
+    display: flex;
+    flex-direction: column;
+ }
+ .contactAddress h3 ,.contactAddress p,.contactAddress a{
+    margin: 5px 0;
+ }
+ 
+ .contactAddress h3, .quickLink h3{
+    margin: 20px 0;
+ }
+  .contactAddress i{
+    color: yellow;
+    margin-right: 15px;
+    margin-left: 20px;
+  }
+
+ .quick-link,.contactAddress a{
+    color: white;
+    text-decoration: none
+ }
+.quickLink-nav{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+
+}
+
+.quick-link{
+    margin: 8px 0;
+}
+
+.policys{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    flex-wrap: wrap;
+}
+
+.policys a{
+    color: white;
+    text-decoration: none;
+}
+
+.develperProfile{
+    color: rgb(185, 182, 182)!Important ;
+}
+.develperProfile:hover{
+    color: white!Important;
+}
+
+ @media (max-width: 992px) { 
+    .footer{
+        padding: 50px 20px;  
+       
+    }
+ }
+
+
+
+ /* -----------About Us----------------- */
+
+ .intro{
+    width: 100%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.566) , rgba(0, 255, 0, 0.467)), url('4.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 200px;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+ }
+
